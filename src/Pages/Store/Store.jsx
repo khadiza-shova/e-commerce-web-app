@@ -6,6 +6,7 @@ import { saveProduct } from '../../Utility/localstorage';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
 import { IoCartOutline } from 'react-icons/io5';
+import { Navigate } from 'react-router-dom';
 
 const Store = () => {
 
@@ -26,6 +27,7 @@ const Store = () => {
                 timer: 1500
             });
             window.location.replace('/orderDetails');
+            // <Navigate to="/orderDetails"></Navigate>
             const idRe = parseInt(id);
             saveProduct(idRe);
         }
