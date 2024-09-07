@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+
+.menu li,menu {
+  margin-right: 23px;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-style: bold;
+}
+
+.logo_color {
+  color: #1E99F5;
+  ;
+}
+
+.footer {
+  width: 1444px;
+  height: 400px;
+  background-color: #0E0E0E;
+  color: white;
+  
+}
+
+.line {
+
+  border-bottom: 1px solid white;
+
+}
+
+.side_btn {
+  background-color: white;
+  border: 1px solid;
+  padding: 7px 30px;
+  color: #717171;
+  border-radius: 6px;
+}
+
+.side_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.storeImage {
+  color: #F2F2F2;
+}
+
+.cartBtn {
+  background-color: black;
+  border: 1px solid;
+  padding: 7px 30px;
+  color: white;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.item_price {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.cardPara {
+  color: #838383;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* .sideImage{
+  background-image: url("../src/assets/Images/Login_sideImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+
+.logo_content {
+  width: 60%;
+  margin-top: 230px;
+  margin-left: 150px;
+}
+
+.loginForm {
+  background-color: #FAFAFA;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  
+}
+
+.loginForm h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.loginForm h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.logo_content_sutitle {
+  color: #C8C4C4;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+form .form_inner {
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding-left: 5px;
+}
+
+.form_inner input{
+  /* border: none; */
+  background-color: #FAFAFA;
+  ;
+  outline: none;
+  
+}
+
+form label {
+  font-size: 14px;
+}
+
+/* form input[type="text"]::placeholder {
+  border: none;
+} */
+
+.checkBox_field {
+  margin-top: 10px;
+}
+
+.checkBox_field span {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.checkBox_field span a {
+  text-decoration: underline;
+}
+
+.signIn_btn {
+  background-color: white;
+  border: 1px solid;
+  padding: 12px 30px;
+  color: #717171;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.HaveANSignIn {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.HaveANSignIn a {
+  color: #0F3DDE;
+}
+
+.RegiForm {
+  background-color: #FAFAFA;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.RegiForm h2 {
+  font-size: 30px;
+
+}
+
+.RegiForm p {
+  font-size: 17px;
+  color: #707070;
+}
+
+.forgetPass {
+  text-align: end;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #0F3DDE;
+}
+
+.order h2,
+.order_details h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+
+}
+
+.order_details {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.order_details h2,
+p {
+  font-style: thin;
+  color: #656565;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.quantity_box {
+  width: 65px;
+  height: 35px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* margin: 0 auto; */
+  margin-top: 20px;
+
+}
+
+.quantity {
+  font-style: thin;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  /* margin-top: 30px; */
+
+}
+
+.detailsPrice {
+  color: #0E0E0E;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #81859F;
+
+}
+
+.barlow-medium2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
