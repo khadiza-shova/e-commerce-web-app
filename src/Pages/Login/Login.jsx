@@ -3,8 +3,7 @@ import sideImageLogo from "../../assets/Images/LoginPageLogo.png"
 import sideImageS from '../../assets/Images/Login_sideImage.png'
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { toast, ToastContainer } from "react-toastify";
-import Swal from "sweetalert2";
+import { FaAppleAlt, FaGoogle } from "react-icons/fa";
 const Login = () => {
 
     const {signIn}= useContext(AuthContext);
@@ -20,12 +19,8 @@ const Login = () => {
 
         .then(result=>{
             console.log(result.user);
-            console.log("Sign In",result.user);
-
-            
+            console.log("Sign In",result.user);            
             window.location.replace('/');
-
-            // return redirect("/");
         })
         .catch(error=>{
             console.log(error.message);
@@ -37,7 +32,6 @@ const Login = () => {
             <div className="border">
                 <div className="RegiForm p-4 ">
                     <h2 className="barlow-medium2">Welcome Back !</h2>
-
                     <p className="barlow-regular">Enter your Credentials to access your account</p>
 
 
@@ -45,15 +39,17 @@ const Login = () => {
                         <div className="form_inner flex flex-col p-1 mt-10">
                             <label htmlFor="">Email Address</label>
                             <input 
-                                type="text"
-                              name="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                                type="text" placeholder="Enter Your Email"
+                              name="email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
 
                         </div>
                         <div className="form_inner flex flex-col p-1 mt-3">
                             <label htmlFor="">Password</label>
-                            <input type="password" name="pass" value={pass} onChange={(e)=>setPass(e.target.value)} />
+                            <input type="password" name="pass" placeholder="Enter Your Password" value={pass} onChange={(e)=>setPass(e.target.value)} required/>
                         </div>
-                        <a className='forgetPass' href=''>Forget Password</a>
+                        <div className='forgetPass'>
+                        <a  href=''>Forget Password</a>
+                        </div>
                         <div className=" checkBox_field">
                             <input type="checkbox" name="" id="" />
                             <span className="ml-2">I agree to the <a href="">Terms & Policy</a></span>
@@ -63,16 +59,28 @@ const Login = () => {
                         
 
 
-                        <div className="flex flex-row gap-14">
-                            <button className='barlow-medium2 signIn_btn mt-4'>Sign in with Google</button>
-                            <button className='barlow-medium2 signIn_btn mt-4'>Sign in with Apple</button>
-                        </div>
-
-                        <p className="HaveANSignIn">Have an Account?  <Link to={'/signUp'}><a href="">Sign Up</a></Link></p>
                     </form>
+                        {/* Social Icon  */}
 
+                            <div className="flex flex-row gap-14">
+                                <button className='barlow-medium2 signIn_btn mt-4'> <div className="flex justify-center items-center">
+                                    <span className="icon"><FaGoogle /></span>
+                                    <span className="ml-1">Sign in with Google</span>
+                                </div> </button>
 
+                                <button className='barlow-medium2 signIn_btn mt-4'>
 
+                                    <div className="flex justify-center items-center">
+
+                                    <span className="icon"><FaAppleAlt /></span>
+                                    <span className="ml-1">Sign in with Apple</span>
+                                    </div>
+                        
+
+                        </button>
+                    </div>
+
+                            <p className="HaveANSignIn">Have an Account?  <Link to={'/signUp'}><a href="">Sign Up</a></Link></p>
 
                 </div>
             </div>

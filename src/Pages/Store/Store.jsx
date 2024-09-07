@@ -5,8 +5,7 @@ import allProduct from '../../assets/productData.json'
 import { saveProduct } from '../../Utility/localstorage';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
-
-
+import { IoCartOutline } from 'react-icons/io5';
 
 const Store = () => {
 
@@ -31,13 +30,11 @@ const Store = () => {
             saveProduct(idRe);
         }
     }
-
-   
    
     return (
         <div className='grid grid-cols-5'>
             <div className='col-span-1 border space-y-3 pt-5'>
-                <button className='barlow-medium2 side_btn'>Rocking Chair</button>
+                <button className='barlow-medium2 side_btn active'>Rocking Chair</button>
                 <button className='barlow-medium2 side_btn'>Rocking Chair</button>
                 <button className='barlow-medium2 side_btn'>Rocking Chair</button>
             </div>
@@ -59,10 +56,13 @@ const Store = () => {
 
                                     <p className='cardPara'>It {product.subtitle}</p>
 
-                                    <button onClick={() => handleClick(`${product.id}`)} className='barlow-medium2 cartBtn mt-4'>Add to Cart</button>
-
-
-                                  
+                                    <button onClick={() => handleClick(`${product.id}`)} className='barlow-medium2 cartBtn mt-4'>
+                                    <div className='flex justify-center items-center ml-2'>
+                                        <span> <IoCartOutline /></span>
+                                        <span className='ml-2'> Add to Cart</span>
+                                    </div>
+                                   
+                                    </button>
                                 </div>
                             </div>
                         )

@@ -3,8 +3,7 @@ import FooterLogo from '../../assets/Images/Logo2.png';
 
 const Footer = () => {
     return (
-        <div className='footer flex p-14'>
-
+        <div className='footer flex p-14 mt-10'>
                 <div className='grid grid-cols-5'>
 
                     <div className='col-span-2'>
