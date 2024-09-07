@@ -8,6 +8,12 @@ import Swal from "sweetalert2";
 const Navbar = () => {
 
     const {user,Logout}= useContext(AuthContext);
+
+    const photoUrl = user?.photoURL;
+    console.log(photoUrl);
+
+
+
     const handleLogout=()=>{
         Swal.fire({
             title: "Are you sure?",
@@ -105,9 +111,14 @@ const Navbar = () => {
                         <div className="dropdown dropdown-end">
 
                             <button onClick={handleLogout}>
+
                             <div className="avatar">
                                 <div className=" mt-4 ring-primary w-8 rounded-full">
-                                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                    {
+                                        user?.photoURL?<img  alt="photo" src={photoUrl}/>: <img alt="avatar" href="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"></img>
+                                         
+                                        
+                                    }
                                 </div>
                             </div>
                             </button>

@@ -3,7 +3,7 @@ import sideImageLogo from "../../assets/Images/LoginPageLogo.png"
 import sideImageS from '../../assets/Images/Login_sideImage.png'
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { FaAppleAlt, FaGoogle } from "react-icons/fa";
+import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 const Login = () => {
 
     const {signIn}= useContext(AuthContext);
@@ -61,24 +61,7 @@ const Login = () => {
 
                     </form>
                         {/* Social Icon  */}
-
-                            <div className="flex flex-row gap-14">
-                                <button className='barlow-medium2 signIn_btn mt-4'> <div className="flex justify-center items-center">
-                                    <span className="icon"><FaGoogle /></span>
-                                    <span className="ml-1">Sign in with Google</span>
-                                </div> </button>
-
-                                <button className='barlow-medium2 signIn_btn mt-4'>
-
-                                    <div className="flex justify-center items-center">
-
-                                    <span className="icon"><FaAppleAlt /></span>
-                                    <span className="ml-1">Sign in with Apple</span>
-                                    </div>
-                        
-
-                        </button>
-                    </div>
+                        <SocialLogin></SocialLogin>
 
                             <p className="HaveANSignIn">Have an Account?  <Link to={'/signUp'}><a href="">Sign Up</a></Link></p>
 
